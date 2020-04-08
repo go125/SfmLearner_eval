@@ -1,1 +1,1 @@
-python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=kitti_eval/kitti_eigen_depth_predictions.npy
+python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/models_SfMLearner/kitti_eigen_depth_predictions.npy
