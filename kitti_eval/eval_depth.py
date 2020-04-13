@@ -24,7 +24,7 @@ def main():
     gt_depths = []
     pred_depths_resized = []
     for t_id in range(num_test):
-    	print(t_id)
+        print(t_id)
         camera_id = cams[t_id]  # 2 is left, 3 is right
         pred_depths_resized.append(
             cv2.resize(pred_depths[t_id], 
