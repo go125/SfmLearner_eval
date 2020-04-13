@@ -10,9 +10,9 @@ flags = tf.app.flags
 flags.DEFINE_integer("batch_size", 4, "The size of of a sample batch")
 flags.DEFINE_integer("img_height", 128, "Image height")
 flags.DEFINE_integer("img_width", 416, "Image width")
-flags.DEFINE_string("dataset_dir", None, "Dataset directory")
-flags.DEFINE_string("output_dir", None, "Output directory")
-flags.DEFINE_string("ckpt_file", None, "checkpoint file")
+flags.DEFINE_string("dataset_dir", '/home/ubuntu/data/raw_data_KITTI/', "Dataset directory")
+flags.DEFINE_string("output_dir", '/home/ubuntu/data/SfMLearner_result_20200413', "Output directory")
+flags.DEFINE_string("ckpt_file", '/home/ubuntu/data/models_SfMLearner/model-190532', "checkpoint file")
 FLAGS = flags.FLAGS
 
 def main(_):
