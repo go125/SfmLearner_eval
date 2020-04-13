@@ -172,6 +172,7 @@ def generate_depth_map(calib_dir, velo_file_name, im_shape, cam=2, interp=False,
     # load calibration files
     cam2cam = read_calib_file(calib_dir + 'calib_cam_to_cam.txt')
     velo2cam = read_calib_file(calib_dir + 'calib_velo_to_cam.txt')
+    print(velo2cam)
     velo2cam = np.hstack((velo2cam['R'].reshape(3,3), velo2cam['T'][..., np.newaxis]))
     velo2cam = np.vstack((velo2cam, np.array([0, 0, 0, 1.0])))
 
