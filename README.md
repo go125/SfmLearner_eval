@@ -13,6 +13,9 @@ If you want use checkpoint of struct2depth or depth from video, use the code [he
 
 ## 2 calculate Abs Rel Error
 
+
+### For checkpoint from SfMLearner
+
 ```shell
 python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/SfMLearner_result_20200413/model-190532.npy
 ```
