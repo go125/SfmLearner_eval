@@ -20,7 +20,7 @@ def compute_errors(gt, pred):
     rmse_log = np.sqrt(rmse_log.mean())
 
     abs_rel = np.mean(np.abs(gt - pred) / gt)
-
+    
     sq_rel = np.mean(((gt - pred)**2) / gt)
 
     return abs_rel, sq_rel, rmse, rmse_log, a1, a2, a3
