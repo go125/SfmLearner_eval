@@ -32,6 +32,12 @@ python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --
 
 ### Input Example for checkpoint from Depth from Video in the Wild
 
+#### kitti_learned_intrinsics (trained by sekilab AWS)
+
+```shell
+python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/dfv_KITTI_depth_result_20200501/result.npy
+```
+
 #### kitti_learned_intrinsics
 
 ```shell
