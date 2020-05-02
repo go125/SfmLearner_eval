@@ -44,7 +44,7 @@ python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --
 python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/dfv_KITTI_depth_result_20200501_2/result.npy
 ```
 
-### Input Example for checkpoint from Depth from Video in the Wild (trained by sekilab AWS)
+## Sekilab AWS Result
 
 #### 35985 steps (143940 images)
 
