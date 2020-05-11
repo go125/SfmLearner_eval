@@ -185,7 +185,7 @@ abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,
 # Training Experiment
 
 ```
-python data/prepare_train_data.py --dataset_dir=/home/ubuntu/data/raw_data_KITTI --dataset_name='kitti_raw_eigen' --dump_root=/home/ubuntu/SfMLearner_data --seq_length=3 --img_width=416 --img_height=128 --num_threads=4
+python data/prepare_train_data.py --dataset_dir=/home/ubuntu/data/raw_data_KITTI/ --dataset_name='kitti_raw_eigen' --dump_root=/home/ubuntu/SfMLearner_data/ --seq_length=3 --img_width=416 --img_height=128 --num_threads=4
 ```
 
 
