@@ -47,11 +47,26 @@ python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --
 # Sekilab AWS Result
 
 
-## 36140 steps (130104 images)
+
+
+## 39754 steps (158296 images)
+
+```shell
+python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20200509_39754/result.npy
+```
+
+
+
+
+## 36140 steps (144560 images)
 
 ```shell
 python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20200509_36140/result.npy
 ```
+
+abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,         a3
+
+0.1568,     1.1754,     5.8660,     0.2369,     0.0000,     0.7835,     0.9231,     0.9704
 
 
 ## 32526 steps (130104 images)
