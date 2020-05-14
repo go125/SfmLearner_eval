@@ -65,6 +65,7 @@ def main():
 
         # Scale matching
         scalor = np.median(gt_depth[mask])/np.median(pred_depth[mask])
+        print(scalor)
         pred_depth[mask] *= scalor
 
         pred_depth[pred_depth < args.min_depth] = args.min_depth
