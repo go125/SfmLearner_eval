@@ -70,7 +70,7 @@ python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --
 
 abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,         a3,     scalor 
 
-0.1523,     1.0821,     5.5694,     0.2274,     0.0000,     0.7929,     0.9316,     0.9746 ,   15.6441
+0.1520,     1.1236,     5.6378,     0.2294,     0.0000,     0.7961,     0.9317,     0.9735 ,   15.6753 
 
  
 ## 58674 steps (938784 images)
