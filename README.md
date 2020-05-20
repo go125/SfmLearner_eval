@@ -54,11 +54,15 @@ python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --
 ```
 
 
-## 50292 steps ( images)
+## 50292 steps (804672 images)
 
 ```shell
 python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20200518_50292/result.npy
 ```
+
+abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,         a3,     scalor 
+
+0.1523,     1.0821,     5.5694,     0.2274,     0.0000,     0.7929,     0.9316,     0.9746 ,   15.6441 
 
 
 
