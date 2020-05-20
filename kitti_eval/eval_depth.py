@@ -47,6 +47,7 @@ def main():
     a1      = np.zeros(num_test, np.float32)
     a2      = np.zeros(num_test, np.float32)
     a3      = np.zeros(num_test, np.float32)
+    scalors = np.zeros(num_test, np.float32)
     for i in range(num_test):    
         gt_depth = gt_depths[i]
         pred_depth = np.copy(pred_depths[i])
@@ -65,7 +66,7 @@ def main():
 
         # Scale matching
         scalor = np.median(gt_depth[mask])/np.median(pred_depth[mask])
-        print(scalor)
+        scalors[i] = scalor
         pred_depth[mask] *= scalor
 
         pred_depth[pred_depth < args.min_depth] = args.min_depth
@@ -73,7 +74,7 @@ def main():
         abs_rel[i], sq_rel[i], rms[i], log_rms[i], a1[i], a2[i], a3[i] = \
             compute_errors(gt_depth[mask], pred_depth[mask])
 
-    print("{:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}".format('abs_rel', 'sq_rel', 'rms', 'log_rms', 'd1_all', 'a1', 'a2', 'a3'))
-    print("{:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}".format(abs_rel.mean(), sq_rel.mean(), rms.mean(), log_rms.mean(), d1_all.mean(), a1.mean(), a2.mean(), a3.mean()))
+    print("{:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}, {:>10}".format('abs_rel', 'sq_rel', 'rms', 'log_rms', 'd1_all', 'a1', 'a2', 'a3', 'scalor'))
+    print("{:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f}, {:10.4f} ,{:10.4f} ".format(abs_rel.mean(), sq_rel.mean(), rms.mean(), log_rms.mean(), d1_all.mean(), a1.mean(), a2.mean(), a3.mean(),scalors.mean()))
 
 main()
