@@ -54,6 +54,7 @@ python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --
 
 
 abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,         a3,     scalor
+
     0.1504,     1.0985,     5.6942,     0.2312,     0.0000,     0.7938,     0.9295,     0.9724 ,   15.1749 
     
 
