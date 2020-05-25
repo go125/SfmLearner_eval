@@ -66,13 +66,21 @@ abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,
 
 # Sekilab AWS Result
 
+## 44704 steps
+
+```shell
+python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20200523_44704/result.npy
+```
+
 ## 55880 steps
 
 ```shell
 python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20200523_55880/result.npy
 ```
 
+abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,         a3,     scalor 
 
+0.1613,     1.1436,     5.8057,     0.2365,     0.0000,     0.7737,     0.9214,     0.9713 ,   12.4788 
 
 ## 67056 steps
 
