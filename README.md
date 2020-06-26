@@ -185,6 +185,9 @@ abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,
 python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20200624_122936/result.npy
 ```
 
+abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,         a3,     scalor 
+
+0.1300,     0.9185,     5.2569,     0.2085,     0.0000,     0.8340,     0.9464,     0.9785 ,   13.6044 
     
 
 # Training Experiment
