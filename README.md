@@ -142,7 +142,9 @@ abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,
 python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20200624_78232/result.npy
 ```
 
+abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,         a3,     scalor 
 
+0.1318,     0.9417,     5.4780,     0.2137,     0.0000,     0.8271,     0.9428,     0.9770 ,   14.1839 
 
 
 ## 89408 steps
