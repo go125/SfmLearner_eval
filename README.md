@@ -67,13 +67,21 @@ abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,
 #### cityscapes_kitti_learned_intrinsics_gray
 
 
-## 14394 steps
+#### 14394 steps
 
 ```shell
 python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20200717_14394/result.npy
 ```
 
+abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,         a3,     scalor 
 
+0.1772,     1.2595,     6.0586,     0.2490,     0.0000,     0.7409,     0.9153,     0.9710 ,   10.4929 
+
+#### 28788 steps
+
+```shell
+python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20200717_28788/result.npy
+```
 
 
 
